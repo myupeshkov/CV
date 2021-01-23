@@ -21,14 +21,13 @@ GPA: 9
 
 Анализ практик использования технологии блокчейн на зарубежных биржах, разработка аналога для российского рынка 
 
-* [NSD Progress Finalist Project](https://github.com/myupeshkov/nsd_moex). 
+* [NSD Progress Finalist Project](https://github.com/myupeshkov/nsd_moex) 
 
 ### Учебный проект "Модельный риск"; Лаборатория по финансовой инженерии и риск-менеджменту (НИУ ВШЭ)
 
 Анализ российского рынка государственных облигаций, использование различных моделей для построения кривой доходностей, измерение модельного риска.
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+* [Model risk](https://github.com/myupeshkov/Model_risk)
   
 ## Опыт работы
 
@@ -37,16 +36,16 @@ GPA: 9
 
 Анализ региональных экономических институтов в России и их влияния на экономическое развитие.
 
-* Item with [link](http://www.example.com). 
+* [Страница на сайте ВШЭ](https://www.hse.ru/org/persons/225568032). 
 
 ## О себе
 
 ### Programming Languages
   - **Python:** Основной язык программирования, который использовался в главном проекте 
-    [link] [ref], а также 
-    для проектов в Machine Learning [link] [ref] и Deep Learning [link] [ref].
+    [Model risk](https://github.com/myupeshkov/Model_risk), а также 
+    для проектов в [Machine Learning](https://github.com/myupeshkov/Machine_Learning) и [Deep Learning](https://github.com/myupeshkov/Deep_Learning)
 
-  - **R:** Использую для регрессионного анализа данных на должности стажера-исследователя,         оформления своих научных работ [link] [ref].
+  - **R:** Использую для регрессионного анализа данных на должности стажера-исследователя, оформления своих научных работ [link] [ref].
 
   - **Julia:** Использую для обработки данных, построения различных графиков в своих работах
     [link] [ref].
