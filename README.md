@@ -1,4 +1,4 @@
-Полное резюме смотрите [https://github.com/myupeshkov/CV/blob/main/my_cv.pdf](здесь)
+Полное резюме смотрите [здесь](https://github.com/myupeshkov/CV/blob/main/my_cv.pdf)
 
 -----
 
@@ -49,10 +49,10 @@ GPA: 8.48
     [Model risk](https://github.com/myupeshkov/Model_risk), а также 
     для проектов в [Machine Learning](https://github.com/myupeshkov/Machine_Learning) и [Deep Learning](https://github.com/myupeshkov/Deep_Learning)
 
-  - **R:** Использую для регрессионного анализа данных на должности стажера-исследователя, оформления своих научных работ или [https://github.com/myupeshkov/networks_res](личных проектов).
+  - **R:** Использую для регрессионного анализа данных на должности стажера-исследователя, оформления своих научных работ или [учебных проектов](https://github.com/myupeshkov/networks_res).
 
-  - **Julia:** Использую для обработки данных, построения различных графиков в своих работах, а также выполняю эконометрические задания
-    [https://github.com/myupeshkov/julia_metrics_tutorials](эконометрические задания).
+  - **Julia:** Использую для обработки данных, построения различных графиков в своих работах, а также выполняю 
+    [эконометрические задания](https://github.com/myupeshkov/julia_metrics_tutorials).
 
   -  Базовые знания **SQL**, **C**, **STATA**
 
