@@ -1,4 +1,4 @@
-Полное резюме смотрите [здесь](https://github.com/myupeshkov/CV/blob/main/my_cv.pdf)
+Полное резюме смотрите [здесь](https://github.com/myupeshkov/CV/blob/main/CV_Peshkov_Russian.pdf)
 
 -----
 
