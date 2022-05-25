@@ -43,7 +43,7 @@
 % more font size definitions
 \usepackage{moresize}
 
-
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
 
 % include the fontawesome icon set
 \usepackage{fontawesome}
@@ -79,6 +79,9 @@
 \newcommand{\iconemail}[5]{ 						
     \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{mailto:#4}{\textcolor{#5}{#3}}
 }
+
+\usepackage{fontawesome}
+\usepackage{setspace}
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
@@ -380,8 +383,8 @@
 
 
 % LEBENSLAUF HIERE
-\AtBeginShipoutFirst{\Header{Резюме}\Footer{1}}
-\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{Резюме}\Footer{2}}}
+\AtBeginShipoutFirst{\Header{CV}\Footer{1}}
+\AtBeginShipout{\AtBeginShipoutAddToBox{\Header{CV}\Footer{2}}}
 
 \newpage
 
@@ -396,37 +399,39 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{resources/image.jpg}	%trimming relative to image size
+\includegraphics[width=\linewidth]{photo.jpg}	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META SKILLS
 %----------------------------------------------------------------------------------------
 	\fcolorbox{white}{white}{\begin{minipage}[c][1cm][c]{1\mpwidth}
-		\LARGE{\textbf{\textcolor{maincol}{Максим Пешков}}} 
+		\LARGE{\textbf{\textcolor{maincol}{Maksim Peshkov}}} 
 \end{minipage}} \\
-\icontext{CaretRight}{12}{21 год}{black}\\[2pt]
-\icontext{CaretRight}{12}{3 курс бакалавриата}{black}\\[2pt]
+\icontext{CaretRight}{12}{22 years}{black}\\[2pt]
+\icontext{CaretRight}{12}{4th year bachelor's degree}{black}\\[2pt]
 
 \vspace{-0.5cm}
 
-\cvsection{Контакты}
+\cvsection{Contacts}
 
 \vspace{-0.2cm}
-\icontext{MapMarker}{16}{Москва}{black}\\[2pt]
+\icontext{MapMarker}{16}{Moscow}{black}\\[2pt]
 \icontext{MobilePhone}{16}{+7(918)625-83-92}{black}\\[2pt]
 \iconemail{Envelope}{16}{myupeshkov@gmail.com}{myupeshkov@gmail.com}{black}\\[2pt]
 \iconhref{Github}{16}{github.com/myupeshkov}{https://github.com/myupeshkov}{black}\\[2pt]
+\- \- \faLinkedinSquare \MYhref[black]{https://www.linkedin.com/in/maksim-peshkov-973374234/}{ \hspace{0.35cm} LinkedIn (Maksim Peshkov)}
 
-\vspace{-0.5cm}
+
+\vspace{-0.2cm}
 
 
-\cvsection{Навыки}
+\cvsection{Skills}
 
-\cvskill{Python (numpy, pandas, sklearn, pytorch)} {} {0.92} \\[-0.3pt]
+\cvskill{Python (numpy, pandas, sklearn, pytorch)} {} {0.9} \\[-0.3pt]
 
 \vspace{-10pt}
 
-\cvskill{MS Office (Excel)} {} {0.85} \\[-0.5pt]
+\cvskill{MS Office (Excel)} {} {0.75} \\[-0.5pt]
 
 \vspace{-10pt}
 
@@ -434,33 +439,33 @@
 
 \vspace{-10pt}
 
-\cvskill{SQL} {} {0.6} \\[-1pt]
+\cvskill{SQL} {} {0.8} \\[-1pt]
 
 \vspace{-10pt}
 
-\cvskill{SAS} {} {0.5} \\[-1pt]
+\cvskill{STATA} {} {0.7} \\[-1pt]
 
 \vspace{-10pt}
 
-\cvskill{Теория вероятности и статистика} {} {0.85} \\[-1pt]
+\cvskill{Probability theory and Statistics} {} {0.92} \\[-1pt]
 
 \vspace{-10pt}
 
-\cvskill{Эконометрика} {} {0.85} \\[-1pt]
+\cvskill{Econometrics} {} {0.92} \\[-1pt]
 
 \vspace{-10pt}
 
-\cvskill{Data Science} {} {0.85} \\[-1pt]
+\cvskill{Data Science} {} {0.8} \\[-1pt]
 
 \vspace{-10pt}
 
 \cvskill{Machine learning/ \newline Deep learning} {} {0.8} \\[-1pt]
 
-\cvskill{Русский}{родной} {1} \\[-1pt]
+\cvskill{Russian}{Native} {1} \\[-1pt]
 
 \vspace{-10pt}
 
-\cvskill{English} {B2} {0.75} \\[-1pt]
+\cvskill{English} {B2} {0.7} \\[-1pt]
 
 \newpage
 %---------------------------------------------------------------------------------------
@@ -468,13 +473,20 @@
 %----------------------------------------------------------------------------------------
 
 
-\cvsection{Интересы}
+\cvsection{Professional interests}
 
 \icontext{CaretRight}{12}{Data Science}{black}\\[6pt]
-\icontext{CaretRight}{12}{Институциональная экономика}{black}\\[6pt]
-\icontext{CaretRight}{12}{Интеллектуальные игры}{black}\\[6pt]
-\icontext{CaretRight}{12}{Игра на гитаре}{black}\\[6pt]
+\icontext{CaretRight}{12}{Artificial Intelligence}{black}\\[6pt]
+\icontext{CaretRight}{12}{Econometrics}{black}\\[6pt]
+\icontext{CaretRight}{12}{Institutional \newline economics}{black}\\[6pt]
+
 	
+	
+\cvsection{Personal interests}
+
+\icontext{CaretRight}{12}{Intellectual games}{black}\\[6pt]
+\icontext{CaretRight}{12}{Playing the guitar}{black}\\[6pt]
+
 %\cvqrcode{0.3}
 
 \end{leftcolumn}
@@ -495,100 +507,153 @@
 %----------------------------------------------------------------------------------------
 
 \vspace{10pt}
-\cvsection{Образование}
+\cvsection{Education}
 \vspace{2pt}
 
 
 \cvevent
 {2018 - 2022}
-	{НИУ "Высшая школа экономики" \hspace{1pt} | \hspace{1pt} г. Москва\newline Бакалавриат}
-	{Факультет экономических наук \newline Экономика | GPA: 8,48}
-	{Изучил на отлично курсы линейной алгебры, математического анализа, дифференциальных уравнений, случайных процессов, микро- и макроэкономики, теории вероятности и математической статистики, эконометрики.}
+	{Higher School of Economics \hspace{1pt} | \hspace{1pt} Moscow \newline Bachelor's programme}
+	{Faculty of economic science \newline Economics | GPA: 8,83 \newline
+        Rating: Top 2\% of undergraduate students}
+	{Completed courses in linear algebra, mathematical analysis, differential equations, random processes, micro- and macroeconomics, probability theory and mathematical statistics, and econometrics with honours.}
 	\vfill\null
 
 \vspace{-0.3cm}
 
 \cvevent
-{2019 - ...}
-	{НИУ "Высшая школа экономики" \hspace{1pt} | \hspace{1pt} г. Москва\newline Майнор}
-	{Интеллектуальный анализ данных \newline ФКН | GPA: 9}
-	{В рамках майнора изучил современные методы машинного обучения в Python, методы работы с текстовыми данными, основы глубинного обучения (основные архитектуры и обучение нейронных сетей). В настоящий момент изучаю прогнозирование временных рядов, генеративные и рекомендательные системы.}
+{2019 - 2021}
+	{Higher School of Economics \hspace{1pt} | \hspace{1pt} Moscow \newline Minor}
+	{Data Science \newline Faculty of Computer Science| GPA: 9}
+	{Completed courses about modern Machine Learning models in Python, the basic NLP models, Deep learning architectures and applied data analysis methods with honours. More details see Более подробно см. \href{https://github.com/myupeshkov/Machine_Learning}{here} and \href{https://github.com/myupeshkov/Deep_Learning}{here}.}
 	\vfill\null
 	
 \vspace{-0.3cm}
 
 \cvevent
 {2007 - 2018}
-	{МОУ Гимназия №87 \hspace{1pt} | \hspace{1pt} г. Краснодар}
-	{Среднее общее и основное общее образование закончил с красными аттестатами}{}
+	{Gymnasium №87 \hspace{1pt} | \hspace{1pt} Krasnodar}
+	{Secondary general and basic general education completed with honours.}{}
 	\vfill\null
 	
-\vspace{-1cm}	
+\vspace{-0.6cm}	
 
-\cvsection{Проектная деятельность}
+
+\cvsection{Work experience}
+\vspace{2pt}
+
+\cvevent
+{03/2020 - present}
+	{Research Assistant}
+	{Center for Institutional Studies\newline Higher School of Economics}
+	{Analysis of economic institutions in Russian regions and identification their development factors. Collection, preprocessing and visualization data in Python. Construction of econometric models and hypothesis testing.}
+	\vfill\null
+
+
+\cvevent
+{01/2021 - 06/2021}
+	{Assistant to Python Data Analysis course}
+	{Faculty of Computer Science\newline Higher School of Economics}
+	{Tutorials preparation and conducting quizzes on algorithmic problems in Python.}
+	\vfill\null
+	
+
+\cvevent
+{06/2021 - 12/2021}
+	{Junior Product Analyst}
+	{Department of Product Lending in "Tinkoff bank"{} \newline TCS Group Holding}
+	{Analysis of product metrics, identifying weaknesses in the POS-sales, suggesting product improvements of Tinkoff Credit Broker, hypotheses formation and testing in A/B experiments.}
+	\vfill\null
+
+
+\cvsection{Project Activities}
 \vspace{2pt}
 
 \cvevent
 {02/2020 - 06/2020}
-	{Учебный проект "Модельный риск" \hspace{1pt} | \hspace{1pt} г. Москва}
-	{Лаборатория по финансовой инженерии\newline и риск-менеджменту\newline НИУ ВШЭ}
-	{Анализ российского рынка государственных облигаций, использование различных моделей для построения кривой доходностей и заполнения пропусков, измерение модельного риска.
-	Более подробно можно ознакомиться \href{https://github.com/myupeshkov/Model_risk}{здесь}.
+	{Educational project "Model Risk"{} \hspace{1pt} | \hspace{1pt} Moscow}
+	{Financial Engineering and Risk Management Laboratory in  Higher School of Economics}
+	{Analysis of the Russian government bond market, using different models to construct the yield curve and measure model risk. Filling in the gaps was the largest part of work  using such methods as EM-algorithm and Kalman Filter. More details and Python file, see \href{https://github.com/myupeshkov/Model_risk}{here}.
 	}
+
 	\vfill\null
 
 \vspace{-0.3cm}
+
 
 \cvevent
 {02/2020 - 05/2020}
-	{Проект "Перспективы развития инфраструктуры российского финансового рынка"  \hspace{1pt} | \hspace{1pt} г. Москва}
-	{Национальный расчетный депозитарий}	
-	{Анализ практик использования технологии блокчейн на зарубежных биржах, оценка технологических и финансовых рисков,  разработка аналога для российского рынка. Более подробно можно ознакомиться \href{https://github.com/myupeshkov/NSD_MOEX}{здесь}.}
-	\vfill\null
-	
-\vspace{-0.5cm}
+    {Educational project "Development prospects of the Russian Financial Market Infrastructure  \hspace{1pt} | \hspace{1pt} Moscow}
+	{National Settlement Depository}	
+	{Analysis of practices of using blockchain technology on foreign currency exchanges, assessment of technological and financial risks, development of an analogue for the Russian market.
+	More details, see \href{https://github.com/myupeshkov/NSD_MOEX/tree/main/educational_project_2020}{here}.
+	}
 
-\cvsection{Опыт работы}
-\vspace{2pt}
-
-\cvevent
-{03/2020 - ...}
-	{Стажер-исследователь}
-	{Институт институциональных исследований\newline НИУ ВШЭ}
-	{Анализ экономических институтов в регионах России и выявление факторов их развитие. Сбор, обработка и визуализация данных при помощи Python. Построение эконометрических моделей и проверка гипотез при помощи R.}
 	\vfill\null
+
 
 \vspace{-0.3cm}
 
-\cvevent
-{01/2021 - ...}
-	{Ассистент курс "Анализ данных на Python"}
-	{Факультет компьютерных наук\newline НИУ ВШЭ}
-	{Проверка домашних заданий, проведение консультаций, проведение устных опросов по алгоритмическим задачам на языке Python.}
-	\vfill\null
-
-\vspace{-0.3cm}
-
-\cvsection{Олимпиады и конференции}
+\cvsection{Conferences}
 \begin{itemize}
-\item 2021 год
-
-\begin{itemize}
-    \item Победитель конференции Национального расчетного депозитария (группа "Московская биржа")
-    \item Призер олимпиады студентов "Высшая лига" по треку "Математические методы в экономике"
+    \item 2021-2022
+    \begin{itemize}
+        \item Speaker in IDC-2021 Conference. More details, see \href{https://spb.hse.ru/en/idc/#about}{here}
+        
+    \item Speaker in NSD Conference "The Future of Financial Infrastructure"{}. More details, see \href{https://github.com/myupeshkov/NSD_MOEX/tree/main/conference_2021}{here}.
+    \end{itemize}
+    
 \end{itemize}
+
 \vspace{-0.3cm}
-\item 2020 год
+
+\cvsection{Olympiads}
+
+\vspace{-0.35cm}
 \begin{itemize}
-    \item Призер конференции Национального расчетного депозитария (группа "Московская биржа")
+\item 2021-2022
+\vspace{-0.1cm}
+\begin{itemize}
+
+    \item Prize winner of the "Econometrics Universiade"{}. More details see \href{https://new.universiade-ecm.com/results/}{here}
+    \item Final stage participant of the "Ya-Profi"{} Student Olympiad in "Mathematics"{}, "Business Informatics"{}, "Mathematical Modeling"{}
+    \item Final stage participant of the "Higher League"{} Student Olympiad in "Business Informatics"{}, "Applied Mathematics"{}, "Economics"{}
+    \item Final stage participant of "MegaOlympiad"{}  ITMO University Olympiad in "Mathematical Modeling"{} track "Information Systems"{}
+    
 \end{itemize}
-\item 2017-2018 года
+
+\item 2020-2021 
+\vspace{-0.2cm}
 \begin{itemize}
-    \item Победитель регионального этапа Всероссийской олимпиады школьников по математике в 2017 и 2018 годах
-    \item Призер олимпиады школьников СПбГУ по математике в 2018 году
-    \item Участник заключительного этапа Всероссийской олимпиады школьников по математике в 2017 году
+    
+  \item Prize winner of the "Higher League"{} Student Olympiad in "Applied Mathematics"{}
+
+\end{itemize}
+\item 2017-2018 
+\begin{itemize}
+    \item Winner of semi-final Russian School Olympiad in Mathematics in 2017 and 2018
+    \item Prize winner of the SPbU School Olympiads in Mathematics in 2018
+    \item Participant of final Russian School Olympiad in Mathematics in 2017
     \end{itemize}
 \end{itemize}
+
+\vspace{-0.4cm}
+
+\cvsection{Certificates}
+\vspace{2pt}
+
+\cvevent 
+{03/2022 - 03/2024}
+    {IELTS Academic}
+    {Overall Band Score: 6.5 | CEFR level: B2}
+    { }
+\vfill\null
+
+\vspace{-0.5cm}
+
+
+
+
 
 % hofixes to create fake-space to ensure the whole height is used
 \mbox{}
@@ -610,3 +675,10 @@
 
 
 \end{document}
+
+
+
+
+
+
+
